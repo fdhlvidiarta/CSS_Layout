@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 800px; /* Lebar galeri */
+        margin: 20px auto; /* Membuat galeri berada di tengah */
+      }
+
+      .item {
+        width: calc(
+          33.33% - 20px
+        ); /* Lebar item (3 item per baris) dengan margin */
+        margin: 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+
+      .item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease;
+      }
+
+      .item:hover img {
+        transform: scale(1.1); 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="item"><img src="image/img/pp 2d.jpg" alt="Foto 1" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item">
+        <img src="image/img/pp kucing sg kayu.jpeg" alt="Foto 3" />
+      </div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+      <div class="item"><img src="image/img/pp typing.jpg" alt="Foto 2" /></div>
+    </div>
+  </body>
+</html>

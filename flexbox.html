@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>belajar Flex Box</title>
+    <style>
+      .wadah_flex {
+        display: flex;
+        background-color: #bf9bf8;
+      }
+      .wadah-flex {
+        display: flex;
+        background-color: #2bd81b;
+        flex-flow: row wrap;
+       justify-content: flex-end;
+      }
+
+      .wadah-flex > div {
+        background-color: green;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div class="wadah-flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+    </div>
+
+    <p>
+      <span style="color: blueviolet">Kesimpulan sekenario 1 adalah: </span>
+      menggunakan display flex akan menampilkan angka didalam div menjadi
+      horizontal.
+    </p>
+
+    <p>
+      <span style="color: rgb(110, 226, 43)"
+        >Kesimpulan sekenario 2 adalah:
+      </span>
+      Setiap elemen yang merupakan anak dari elemen dengan kelas "wadah-flex"
+      akan memiliki latar belakang warna hijau, margin sebesar 10 piksel,
+      padding sebesar 5 piksel, dan ukuran font-size 30 piksel.
+    </p>
+
+    <p>
+      <span style="color: #367fec">Kesimpulan sekenario 3 adalah: </span>
+      Ketika nilai flex-direction diubah, tata letak dari elemen-elemen di dalam
+      .wadah-flex akan disesuaikan sesuai dengan arah yang ditentukan, baik
+      secara horizontal maupun vertikal.
+    </p>
+
+    <p>
+      <span style="color: #10b475">Kesimpulan sekenario 4 adalah: </span>
+      Ketika style flex-wrap ditambahkan dengan nilai yang berbeda-beda pada
+      .wadah-flex, hasilnya akan mengatur cara item-item di dalam wadah
+      fleksibel tersebut akan dibungkus saat mencapai batas wadahnya.
+    </p>
+
+    <p>
+      <span style="color: #e2b72b">Kesimpulan sekenario 5 adalah: </span>
+      flex-flow: row wrap, elemen-elemen dalam wadah flex akan disusun secara
+      horizontal (baris), dan ketika ukuran wadah tidak mencukupi untuk
+      menampung semua elemen, elemen-elemen tersebut akan terbentuk ke dalam
+      baris baru (tergantung pada ukuran dan fleksibilitas elemen-elemen
+      tersebut). Menciptakan tata letak yang responsif dan dinamis, di mana
+      elemen-elemen dapat mengatur diri sendiri secara otomatis sesuai dengan
+      ukuran dan ruang yang tersedia dalam wadah flex.
+    </p>
+
+    <p>
+      <span style="color: tomato">Kesimpulan sekenario 6 adalah: </span>
+      justify-content dengan nilai yang berbeda pada justify-content:
+      flex-start; - Konten akan disusun di sebelah kiri wadah-flex. flex-end; -
+      Konten akan disusun di sebelah kanan wadah-flex. center; - Konten akan
+      dipusatkan secara horizontal di dalam wadah-flex. space-between; - Konten
+      akan tersebar merata di sepanjang wadah-flex, dengan jarak yang sama di
+      antara setiap elemen dan elemen pertama di bagian awal dan elemen terakhir
+      di bagian akhir. space-around; - Konten akan tersebar merata di sepanjang
+      wadah-flex, dengan jarak yang sama di antara setiap elemen dan separuh
+      jarak di antara elemen pertama dan terakhir dengan tepi wadah-flex.
+      space-evenly; - Konten akan tersebar merata di sepanjang wadah-flex,
+      dengan jarak yang sama di antara setiap elemen, termasuk antara elemen
+      pertama dan terakhir dengan tepi wadah-flex, serta di antara setiap
+      pasangan elemen berurutan.
+    </p>
+  </body>
+</html>
